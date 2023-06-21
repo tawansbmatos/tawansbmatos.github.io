@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    transition: linear all .3s;
+}
+body{
+    background: linear-gradient(45deg, #0C7075, #6DA5C0, #294D61, #0C7075, #6DA5C0, #294D61, #0C7075, #6DA5C0, #294D61);
+}
+.conteudo-zero {
+    text-align: center;
+    width: 100%;
+   margin-bottom: 1rem;
+  
+
+}
+.conteudo-zero h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+/*cabeça do site*/
+.cont-header{
+    width: 100%;
+    
+}
+.cont-nav {
+    padding: 5px;
+}
+.cont-nav ul{
+    display: flex;
+    float: right;
+    align-items: center;
+}
+.cont-nav ul li{
+    padding: 1.5rem;
+}
+.cont-nav ul li a{
+    color: #fff;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    transition: 0.5s;
+    
+}
+
+.cont-nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 2.5px;
+    width: 0;
+    border-radius: 50px;
+    background: #fff ;
+    transition: 0.3s;
+}
+.cont-nav ul li a:hover::before{
+    width: 100%;
+}
+/* fim da navegação do site*/
+
+/*container dos cards*/
+.cont-section-one{
+    width: 90%;
+    margin: 0 auto;
+}
+.conteudo-section-one{
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    flex-wrap: wrap;
+    padding: 1rem;
+    
+}
+.card-section-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px #b0e0e6,
+    0 0 10px #b0e0e6,
+    0 0 15px #b0e0e6,
+    0 0 20px #b0e0e6;
+    margin: 1rem;
+    width: 16rem;
+    height: 14rem;
+    
+    
+}
+.card-section-one:hover{
+    background-color: #0000002c;
+}
+
+/*
+.card-section-one::before, .card-section-one::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(24.5% + 0px);
+    height: calc(41% + 25px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #ffff00, #00ff00, #a200ff );
+    background-size: 300%;
+    border-radius: .5rem;
+
+}
+
+.card-section-one::after{
+    filter: blur(.7rem);
+}
+*/
+/*ícones dos cards*/
+.material-symbols-outlined{
+    font-size: 5rem;
+    color: #000;
+    margin-top: 1rem;
+    
+}
+.material-symbols-outlined:hover{
+    color: #fff;
+}
+.card-section-one h3{
+    font-size: 1rem;
+    color: #000;
+}
+.card-section-one h3:hover{
+    color: #fff;
+}
+
+.card-section-one a{
+    background-color: #000;
+    color: #fff;
+    padding: .3rem 3rem;
+    border-radius: 1rem;
+}
+.card-section-one a:hover{
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-top: 0;
+    color: #000;
+}
